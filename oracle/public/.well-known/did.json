@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": "did:hsk:compliancepass:v1",
+  "verificationMethod": [
+    {
+      "id": "did:hsk:compliancepass:v1#key-1",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "controller": "did:hsk:compliancepass:v1",
+      "publicKeyHex": "<deployer_public_key>"
+    }
+  ]
+}

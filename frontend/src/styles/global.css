@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-base: #06070a;
+  --color-surface-1: #0d1016;
+  --color-surface-2: #131823;
+  --color-surface-3: #1a2230;
+  --color-content-primary: #f5f7fa;
+  --color-content-secondary: #a4afbf;
+  --color-content-muted: #667085;
+  --color-border-hairline: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+  --color-accent-success: #10b981;
+  --color-accent-success-glow: rgba(16, 185, 129, 0.18);
+  --color-accent-info: #7dd3fc;
+  --color-accent-warning: #f59e0b;
+  --color-accent-danger: #ef4444;
+  --color-tier-1: #8c98ab;
+  --color-tier-2: #7db9da;
+  --color-tier-3: #34d399;
+  --bezier-premium: cubic-bezier(0.23, 1, 0.32, 1);
+  --bezier-screen: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-base);
+  color: var(--color-content-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  font-family: "Geist", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(125, 211, 252, 0.08), transparent 24%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.08), transparent 30%),
+    radial-gradient(circle at 50% 75%, rgba(255, 255, 255, 0.03), transparent 32%),
+    var(--color-base);
+  color: var(--color-content-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.page-frame {
+  margin-inline: auto;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+}
+
+.page-frame-tight {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+}
+
+.surface-pad {
+  padding: 2rem;
+}
+
+.surface-pad-sm {
+  padding: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .page-frame {
+    gap: 3.5rem;
+    padding-top: 2rem;
+  }
+
+  .page-frame-tight {
+    padding-top: 2rem;
+  }
+
+  .surface-pad {
+    padding: 2.25rem;
+  }
+}
+
+.compliance-lattice {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 84px 84px;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.text-kicker {
+  font-size: 0.72rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-content-muted);
+}
+
+.double-bezel-shell {
+  border: 1px solid var(--color-border-hairline);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.double-bezel-core {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.premium-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.premium-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.premium-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}

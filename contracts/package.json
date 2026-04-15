@@ -1,0 +1,26 @@
+{
+  "name": "hashkey-compliancepass-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network hashkeyTestnet",
+    "seed:testnet": "hardhat run scripts/seedDemo.ts --network hashkeyTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.0.2",
+    "@semaphore-protocol/contracts": "^4.0.0",
+    "@zk-kit/lean-imt.sol": "^2.0.1",
+    "poseidon-solidity": "^0.0.5"
+  }
+}

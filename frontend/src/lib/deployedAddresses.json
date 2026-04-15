@@ -1,0 +1,17 @@
+{
+  "network": "hashkeyTestnet",
+  "chainId": 133,
+  "deployedAt": "2026-04-13T18:10:40.685Z",
+  "deployer": "0x94c188F8280cA706949CC030F69e42B5544514ac",
+  "semaphoreVerifier": "0x1850d2a31CB8669Ba757159B638DE19Af532ba5e",
+  "poseidonT3": "0x9db2e380f9100793ea71413224dD7C22F97aD91B",
+  "semaphore": "0x536b31435bFAE994169181AcA9BAadC784555b4B",
+  "revocationRegistry": "0x6C6e9bC9cBd3f0A90D61E094b4997199B81A02d5",
+  "attesterRegistry": "0xB9F38E0180F62e80Be6ca44cE6202316FCcefEC9",
+  "aiRiskOracle": "0x1699c6ae317F1f3DECaE37B806c174C4D3CAE26e",
+  "complianceSBT": "0x8aE5480D7fFAADb5f8Ef99246562a61Da30cf7E7",
+  "compliancePass": "0xdBB3d6e17b34C118BdFd9A73FaECA55C4E814B51",
+  "mockGovernmentBondFund": "0xcD0915cb3423F6665C636d723648F78d88B81e52",
+  "mockStablecoinMint": "0x110D5480D02e2501e7aB7a41cFBc565BdF4D818e",
+  "mockCreditFacility": "0x0424981440717D4E445B63399e1B9bf17bD04e70"
+}
